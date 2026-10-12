@@ -1,0 +1,12 @@
+const res = await fetch("http://localhost:3001");
+console.log("Status:", res.status);
+const html = await res.text();
+console.log("HTML length:", html.length);
+console.log("Has 'Classic BMW':", html.includes("Classic BMW"));
+console.log("Has 'BMW cars for sale':", html.includes("BMW cars for sale"));
+const viewMatches = html.match(/View on Gumtree/g) || [];
+console.log("Found 'View on Gumtree' buttons count:", viewMatches.length);
+const gumtreeLinks = html.match(/href="https:\/\/www\.gumtree\.com\/p\/bmw\/[^"]+"/g) || [];
+console.log("Found Gumtree car links count:", gumtreeLinks.length);
+console.log("Sample Gumtree URL:", gumtreeLinks[0]);
+console.log("Sample Gumtree URL 2:", gumtreeLinks[1]);

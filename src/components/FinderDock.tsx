@@ -104,13 +104,13 @@ export function FinderDock({ filters, variantOptions, onChange, onSubmit }: Prop
   const hideOnPhone = !open;
 
   return (
-    <section aria-label="Find a classic Mercedes" className="relative z-20 border-b border-line bg-white">
+    <section aria-label="Find a BMW" className="relative z-20 border-b border-line bg-white">
       <div className="container-site py-2 min-[521px]:py-[14px] min-[621px]:pt-5 min-[621px]:pb-4">
         <form role="search" onSubmit={submit}>
           <div
             className={`grid items-center gap-2 min-[521px]:gap-[9px] ${
               open ? "grid-cols-2" : "grid-cols-[minmax(0,1fr)_auto]"
-            } min-[521px]:grid-cols-2 min-[701px]:grid-cols-[minmax(260px,2fr)_repeat(2,minmax(125px,1fr))] min-[1051px]:grid-cols-[minmax(280px,1.75fr)_repeat(4,minmax(118px,0.8fr))_minmax(128px,0.72fr)]`}
+            } min-[521px]:grid-cols-2 min-[701px]:grid-cols-[minmax(260px,2fr)_repeat(2,125px)] min-[1051px]:grid-cols-[minmax(280px,1.75fr)_repeat(4,minmax(118px,0.8fr))_minmax(128px,0.72fr)]`}
           >
             <label className={`relative block ${open ? "col-span-full" : ""} min-[521px]:col-span-full min-[701px]:col-span-1`}>
               <span className="sr-only">Search cars</span>
@@ -126,13 +126,13 @@ export function FinderDock({ filters, variantOptions, onChange, onSubmit }: Prop
                 name="q"
                 value={filters.query}
                 onChange={(e) => onChange({ query: e.target.value })}
-                placeholder="Find your dream Mercedes"
+                placeholder="Search BMW cars (e.g. 320d, X5, 520d, M3)"
                 autoComplete="off"
                 className="min-h-12 w-full rounded-[4px] border border-line-strong bg-white py-[10px] pr-[14px] pl-[58px] text-[0.9rem] text-ink transition-colors hover:border-ink min-[431px]:text-[0.98rem]"
               />
             </label>
 
-            <PrimaryFilter id="finder-model" label="Mercedes range" hiddenOnPhone={hideOnPhone}>
+            <PrimaryFilter id="finder-model" label="BMW range" hiddenOnPhone={hideOnPhone}>
               <select
                 id="finder-model"
                 value={filters.model}
@@ -285,7 +285,7 @@ export function FinderDock({ filters, variantOptions, onChange, onSubmit }: Prop
             active={false}
             onClick={() => onChange({ model: "all", variant: "all" })}
           >
-            All MY2005-or-older cars
+            All BMW cars
           </QuickChip>
         </nav>
       </div>

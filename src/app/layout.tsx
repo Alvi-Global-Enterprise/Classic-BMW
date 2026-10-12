@@ -2,11 +2,11 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Classic Mercs | Classic Mercedes Classifieds",
-  description: "Classic Mercs is a UK marketplace for buying and selling classic Mercedes cars.",
+  title: "Classic BMW | BMW Classifieds UK",
+  description: "Browse and discover BMW cars sourced directly from Gumtree UK and leading classifieds.",
   openGraph: {
-    title: "Classic Mercs | Classic Mercedes Classifieds",
-    description: "Classic Mercs is a UK marketplace for buying and selling classic Mercedes cars.",
+    title: "Classic BMW | BMW Classifieds UK",
+    description: "Browse and discover BMW cars sourced directly from Gumtree UK and leading classifieds.",
     type: "website",
   },
   twitter: { card: "summary_large_image" },

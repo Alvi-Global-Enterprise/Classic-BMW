@@ -80,7 +80,7 @@ export function HomeMarketplace() {
       <main id="main-content">
         <section
           id="home-inventory"
-          aria-label="Classic Mercedes cars for sale"
+          aria-label="BMW cars for sale"
           className="scroll-mt-[110px] bg-white pt-[22px] pb-[54px] min-[521px]:pt-6 min-[621px]:pt-8 min-[821px]:pb-[72px]"
         >
           <div className="container-site">
@@ -129,7 +129,7 @@ export function HomeMarketplace() {
                   </AnimatePresence>
                   {!shown.length && (
                     <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="m-0 p-6 text-center text-ink-soft">
-                      Try removing a filter or searching for a different Mercedes model.
+                      Try removing a filter or searching for a different BMW model.
                     </motion.p>
                   )}
                 </div>

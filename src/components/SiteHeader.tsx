@@ -14,16 +14,16 @@ export function SiteHeader() {
       <div className="container-site grid min-h-[92px] grid-cols-1 items-center gap-x-[18px] gap-y-3 py-[14px] min-[1081px]:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] min-[1081px]:py-0">
         <Link
           href="/"
-          aria-label="Classic Mercs home"
+          aria-label="Classic BMW home"
           className="inline-flex items-center gap-[10px] justify-self-center text-white min-[621px]:gap-4 min-[1081px]:justify-self-start"
         >
           <BrandMark className="h-[48px] w-[48px] shrink-0 min-[621px]:h-14 min-[621px]:w-16" />
           <span className="min-w-0">
             <strong className="block font-display text-[clamp(1.05rem,4.4vw,1.5rem)] leading-none font-normal whitespace-nowrap min-[621px]:text-[1.875rem]">
-              Classic Mercs
+              Classic BMW
             </strong>
             <small className="mt-[5px] hidden text-[0.72rem] text-footer-text min-[621px]:block">
-              Independent Mercedes classifieds
+              Independent BMW classifieds
             </small>
           </span>
         </Link>
